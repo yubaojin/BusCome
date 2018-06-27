@@ -22,3 +22,7 @@
 
 <p>换乘（路线规划）主要是用的是高德微信SDK带得线路规划函数<a href="http://lbs.amap.com/api/wx/reference/core">http://lbs.amap.com/api/wx/reference/core</a></p>
 <p>我的里面的定时刷新并没有实现，因为找到更好的方法去刷新，在查询页面，可以通过下拉来刷新</p>
+
+## 转载请注明来源
+
+</a href="https://github.com/yubaojin/BusCome.git">https://github.com/yubaojin/BusCome.git</a>
