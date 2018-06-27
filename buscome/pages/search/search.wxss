@@ -1,0 +1,111 @@
+/* pages/search/search.wxss */
+
+page {
+  background-color: #eee;
+}
+
+.all {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+.topsearch {
+  float: left;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 0px 10px 10px;
+}
+
+.topsearch input {
+  float: left;
+  width: 96%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: #eee;
+  padding-left: 10px;
+}
+
+.searchbtn {
+  float: left;
+  width: 10%;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 5px 10px 0px;
+}
+
+.searchbtn image {
+  float: left;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.mdle {
+  float: left;
+  width: 100%;
+  background-color: white;
+}
+
+.middle {
+  float: left;
+  width: 95%;
+  height: 45px;
+  padding: 0px 10px 0px 10px;
+  border-top: 1px solid #eee;
+}
+
+.middletop {
+  float: left;
+  width: 20%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  overflow: hidden;
+  color: black;
+}
+
+.middlebottom {
+  float: left;
+  width: 71%;
+  height: 45px;
+  font-size: 14px;
+  padding-left: 20px;
+  color: grey;
+}
+
+.middlebottom1 {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  color: grey;
+}
+
+.middlebottom2 {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  padding: 0px 5px 0px 5px;
+  color: grey;
+}
+
+.middlebottom2 image {
+  float: left;
+  width: 40px;
+  height:14px;
+  margin-top:16px;
+  color: grey;
+}

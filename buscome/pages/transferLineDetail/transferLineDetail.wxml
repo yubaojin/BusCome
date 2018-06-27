@@ -1,0 +1,97 @@
+<!--pages/transferLineDetail/transferLineDetail.wxml-->
+<view class='top'>
+  <view class='toptop'>
+    <view class='toptopwz'>{{start.title}} - {{end.title}}</view>
+  </view>
+  <view class='topbtm'>
+    <view class='topbtm1'>
+      <image src="../../imgs/interval.png"></image>
+    </view>
+    <view class='topbtmwz'>{{transit.duration}}分钟</view>
+    <view class='topbtm2'>
+      <image src="../../imgs/point.png"></image>
+    </view>
+    <view class='topbtm3'>
+      <image src="../../imgs/ps.png">></image>
+    </view>
+    <view class='topbtmwz'>{{transit.walking_distance}}米</view>
+    <view class='topbtmrighttp'>
+      <image src='../../imgs/map.png' data-transit='{{transit}}' data-start='{{start}}' data-end="{{end}}" bindtap='jumpLineMap'></image>
+    </view>
+  </view>
+</view>
+<view class='mid'>
+
+  <!--起点  -->
+  <view class='mid1'>
+    <view class='mid1img'>
+      <image src="../../imgs/pointstart.png">></image>
+    </view>
+    <view class='=imd1wz'>起点（{{start.title}}）</view>
+  </view>
+
+  <block wx:for="{{transit.segments}}" wx:key="" wx:for-index="idx1" wx:for-item="segment">
+
+    <!--走路  -->
+    <block wx:if="{{segment.walking}}">
+      <view class='mid2'>
+        <view class='mid2img1'>
+          <image src="../../imgs/person.png"></image>
+        </view>
+        <view class='mid2img2'>
+          <image src="../../imgs/personroad.png"></image>
+        </view>
+        <view class='mid2wz'>步行{{segment.walking.distance?segment.walking.distance:'0'}}米，到达{{segment.bus.busline?segment.bus.busline.departure_stop.name:'终点站'}}</view>
+      </view>
+    </block>
+
+    <!-- 公交&地铁 -->
+    <block wx:if="{{segment.bus.busline}}">
+      <view class='mid3'>
+        <view class='mid3img1'>
+          <image src="{{segment.bus.type==1?'../../imgs/bus.png':'../../imgs/subway.png'}}"></image>
+        </view>
+        <view class='mid3img2'>
+          <image src="{{segment.bus.type==1?'../../imgs/busroad.png':'../../imgs/subwayraod.png'}}"></image>
+        </view>
+        <view class='mid3right'>
+          <view class='mid3righttop'>
+            <view class='mid3righttopleft'>
+              {{segment.bus.busline.departure_stop.name}}
+            </view>
+            <view class='mid3righttopright'>
+              上车
+            </view>
+          </view>
+          <view class='mid3rightmid'>
+            <view class='mid3rightmidleft'>
+              乘坐
+            </view>
+            <view class='mid3rightmidright1'>
+              {{segment.bus.busline.name}}
+            </view>
+            <view class='mid3rightmidrightright'>
+              {{segment.bus.busline.via_num}}站
+            </view>
+          </view>
+          <view class='mid3rightbtm'>
+            <view class='mid3righttopleft'>
+              {{segment.bus.busline.arrival_stop.name}}
+            </view>
+            <view class='mid3righttopright'>
+              下车
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </block>
+
+  <!--终点  -->
+  <view class='mid1'>
+    <view class='mid1img'>
+      <image src="../../imgs/pointend.png">></image>
+    </view>
+    <view class='=imd1wz'>终点（{{end.title}}）</view>
+  </view>
+</view>

@@ -1,0 +1,302 @@
+/* pages/transferLineDetail/transferLineDetail.wxss */
+
+page {
+  width: 100%;
+}
+
+.top {
+  position: fixed;
+  padding: 0px 10px 0px 10px;
+  float: left;
+  width: 94%;
+  background-color: white;
+  height: 70px;
+  border-bottom: 1px solid #eee;
+}
+
+.topbtmrighttp {
+  float: right;
+  height: 100%;
+}
+
+.topbtmrighttp image {
+  float: right;
+  height: 30px;
+  width: 31px;
+  padding-right: 14px;
+  margin-top: -10px;
+}
+
+.toptop {
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+
+.toptopwz {
+  float: left;
+  font-size: 18px;
+  height: 35px;
+  overflow: hidden;
+  line-height: 35px;
+}
+
+.toptoppic {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  padding: 0px 5px 0px 5px;
+}
+
+.toptoppic image {
+  float: left;
+  height: 35px;
+  width: 35px;
+}
+
+.topbtm {
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+
+.topbtm1 {
+  float: left;
+  height: 100%;
+  padding-right: 5px;
+}
+
+.topbtm1 image {
+  float: left;
+  height: 25px;
+  width: 30px;
+}
+
+.topbtmwz {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  color: grey;
+  padding-right: 5px;
+}
+
+.topbtm2 {
+  float: left;
+  height: 100%;
+  padding-right: 5px;
+}
+
+.topbtm2 image {
+  float: left;
+  height: 16px;
+  width: 16px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.topbtm3 {
+  float: left;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+  padding-top: 0px;
+}
+
+.topbtm3 image {
+  float: left;
+  height: 25px;
+  width: 25px;
+}
+
+.mid {
+  padding: 10px 10px 0px 10px;
+  float: left;
+  margin-top: 72px;
+  width: 94%;
+}
+
+.mid1 {
+  float: left;
+  width: 100%;
+  height: 30px;
+}
+
+.mid1img {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.mid1img image {
+  float: right;
+  width: 20px;
+  height: 30px;
+}
+
+.imd1wz {
+  float: left;
+  width: 70%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.mid2 {
+  float: left;
+  width: 100%;
+  height: 60px;
+}
+
+.mid2img1 {
+  float: left;
+  width: 11%;
+  height: 60px;
+  padding-top: 15px;
+}
+
+.mid2img1 image {
+  float: left;
+  width: 23px;
+  height: 26px;
+  padding-left: 9px;
+}
+
+.mid2img2 {
+  float: left;
+  width: 33px;
+  height: 58px;
+  padding-left: 4px;
+}
+
+.mid2img2 image {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.mid2wz {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  width: 68%;
+}
+
+.mid3 {
+  float: left;
+  width: 100%;
+  height: 110px;
+}
+
+.mid3img1 {
+  float: left;
+  width: 14%;
+  height: 100%;
+  padding-top: 25px;
+}
+
+.mid3img1 image {
+  float: left;
+  width: 23px;
+  height: 26px;
+  padding-left: 11px;
+  padding-top: 25px;
+}
+
+.mid3img2 {
+  float: left;
+  width: 5.5%;
+  height: 100%;
+}
+
+.mid3img2 image {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.mid3right {
+  float: left;
+  width: 70.8%;
+  height: 100%;
+  padding-left: 9px;
+  padding-top: 12px;
+}
+
+.mid3righttop {
+  float: left;
+  width: 100%;
+  height: 30%;
+}
+
+.mid3righttopleft {
+  float: left;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 17px;
+  height: 20px;
+  line-height: 20px;
+  width:60%;
+overflow:hidden;
+
+}
+
+.mid3rightmidright1 {
+  float: left;
+  padding-left: 5px;
+  font-size: 14px;
+  height:16px;
+  overflow:hidden;
+width:59%;
+
+}
+
+.mid3righttopright {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;
+  color: grey;
+  height: 20px;
+  line-height: 20px;
+}
+
+.mid3rightmid {
+  padding-left: 10px;
+  float: left;
+  width: 100%;
+  height: 30%;
+}
+
+.mid3rightmidleft {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  color: grey;
+  height: 20px;
+  line-height: 20px;
+}
+
+.mid3rightmidright {
+  float: left;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 15px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.mid3rightmidrightright {
+  float: right;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 14px;
+  color: #09f;
+  height: 20px;
+  line-height: 20px;
+}

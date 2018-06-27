@@ -1,0 +1,42 @@
+<!--pages/transferLines/transeferLines.wxml-->
+<view class='top'>
+  <view class='top1' data-type='0' bindtap='changeType' style="{{type==0?'  border-bottom: 2px solid red;':''}}">较快捷</view>
+  <view class='top1' data-type='3' bindtap='changeType' style="{{type==3?'  border-bottom: 2px solid red;':''}}">少步行</view>
+  <view class='top1' data-type='2' bindtap='changeType' style="{{type==2?'  border-bottom: 2px solid red;':''}}">少换乘</view>
+  <view class='top1' data-type='5' bindtap='changeType' style="{{type==5?'  border-bottom: 2px solid red;':''}}">不坐地铁</view>
+</view>
+<view class='middle' wx:for="{{transits}}" wx:key="" wx:for-index="idx1" wx:for-item="transit">
+  <view data-transit="{{transit}}" bindtap='jumpTransferLineDetail'>
+    <view class='middleleft' wx:if="{{transit.type==1}}">
+      <image src='../../imgs/bus.png'></image>
+    </view>
+    <view class='middleleft' wx:if="{{transit.type==2}}">
+      <image src='../../imgs/subway.png'></image>
+    </view>
+    <view class='middleright'>
+      <view class='middlerighttop'>
+        <view class='middlerighttopwz'>{{transit.title}}</view>
+        <view class='middlerighttoppic'>
+          <image />
+        </view>
+        <!-- <view class='middlerighttopwz'>规划局</view> -->
+      </view>
+      <view class='middlerightbtm'>
+        <view class='middlerightbtmpic1'>
+          <image src='../../imgs/interval.png'></image>
+        </view>
+        <view class='middlerightbtmwz'>{{transit.duration}}分钟</view>
+        <view class='middlerightbtmpic2'>
+          <image src='../../imgs/point.png'></image>
+        </view>
+        <view class='middlerightbtmpic3'>
+          <image src='../../imgs/ps.png'></image>
+        </view>
+        <view class='middlerightbtmwz'>{{transit.walking_distance}}米</view>
+      </view>
+    </view>
+    <view class='middlerightright'>
+      <view class='middlerightrightbtm'>￥{{transit.cost}}</view>
+    </view>
+  </view>
+</view>

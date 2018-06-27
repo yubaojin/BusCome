@@ -1,0 +1,43 @@
+<!--pages/lineDetail/lineDetail.wxml-->
+<view class="all">
+  <view class='top'>
+    <view class="topleft">
+      <view class="toplefttop">
+        <view class='toplefttopleft'>{{lineDetail.startstation?lineDetail.startstation:'未知'}}</view>
+        <view class='toplefttopmiddle'><image src="../../imgs/arrow.jpg"/></view>
+        <view class='toplefttopright'>{{lineDetail.endstation?lineDetail.endstation:'未知'}}</view>
+        </view>
+      <view class="topleftbottom">
+        <view class='topleftbottomredspan'>首</view>
+        <view class='topleftbottomtimespan'>{{lineDetail.starttime?lineDetail.starttime:'未知'}}</view>
+        <view class='topleftbottomredspan'>末</view>
+        <view class='topleftbottomtimespan'>{{lineDetail.endtime?lineDetail.endtime:'未知'}}</view>
+      <view class="toprightbom">
+        <view style='float:right;'>站</view>
+        <view class="toprightbom2">{{lineDetailListLength}}</view>
+        <view style='float:right;'>一共</view>
+      </view>
+        <view class="toprighttop">¥{{lineDetail.price?lineDetail.price:'未知'}}</view>
+    </view>
+    
+      
+    </view>
+  </view>
+  <view class='middles'>
+    <view class='middles1' wx:for="{{lineDetail.list}}" wx:key="" wx:for-index="idx1" wx:for-item="point">
+      <view class='middles11'>
+        <view class='middles111'>
+          <view class='middles1111' style="{{point.station==station?'background:blue':''}}">{{point.sequenceno}}</view>
+        </view>
+        <view class='middles112'>{{point.station}}</view>
+        <view class='middles113'></view>
+      </view>
+      <block wx:if="{{idx1!=lineDetailListLength-1}}">
+      <view class='middles12'></view>
+      <view class='middles13'></view>
+      <view class='middles14'></view>
+      <view class='middles15'></view>
+      </block>
+    </view>
+  </view>
+</view>

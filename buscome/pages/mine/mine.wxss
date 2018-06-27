@@ -1,0 +1,68 @@
+/* pages/mine/mine.wxss */
+
+/*会员中心*/
+
+/*个人信息*/
+
+.summary {
+  background: #0097ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*头像*/
+
+.summary .avatar {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+/*昵称*/
+
+.summary .nickname {
+  color: white;
+  font-size: 22px;
+}
+
+/*通用列表*/
+
+.listview {
+  margin-top: 20px;
+  border-top-style:solid;
+  border-bottom-style:solid;
+  border-width:0.5px;
+  border-color:gray;
+}
+
+/*列表项*/
+
+.listview .item {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-left: 0;
+  height: 50px;
+}
+
+.listview .item .hd {
+  width: 22px;
+  height: 22px;
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.listview .item .bd {
+  font-size: 16px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.listview .body-view2 {
+  width: 50%;
+  left: 20px;
+}

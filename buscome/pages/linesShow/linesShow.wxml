@@ -1,0 +1,32 @@
+<!--pages/linesShow/linesShow.wxml-->
+<view class='all'>
+  <view class="lispan" wx:for="{{lines}}" wx:key="" wx:for-index="idx1" wx:for-item="line">
+    <view bindtap='jumpLineDetail' data-line='{{line.transitno}}'>
+      <view class='q1'>
+        <view class='q11'>
+          <image src='../../imgs/bus.png' />
+        </view>
+        <view class='q12'>{{line.transitno?line.transitno:'未知'}}</view>
+      </view>
+      <view class='q2'>
+        <view class='q21'>
+          <view class='q211'>{{line.startstation?line.startstation:'未知'}}</view>
+          <view class='q212'>
+            <image src="../../imgs/doublearrow.png" />
+          </view>
+          <view class='q213'>{{line.endstation?line.endstation:'未知'}}</view>
+        </view>
+        <view class='q22'>
+          <view class='q221'>
+            <view class='q2211'>起:{{line.starttime?line.starttime:'未知'}}</view>
+            <view class='q2212'>终:{{line.endtime?line.endtime:'未知'}}</view>
+          </view>
+          <view class='q222'>
+            <view class='q2221'>{{line.price?line.price:'未知'}}</view>
+            <view class='q2222'>¥</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

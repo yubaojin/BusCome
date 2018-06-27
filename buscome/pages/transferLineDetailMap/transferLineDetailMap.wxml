@@ -1,0 +1,5 @@
+<!--pages/transferLineDetailMap/transferLineDetailMap.wxml-->
+<view class="map">
+  <map id="map" longitude="{{start.longitude}}" latitude="{{start.latitude}}" scale="14" markers="{{markers}}" polyline="{{polyline}}" show-location style='width:100%;height:600px'>
+  </map>
+</view>

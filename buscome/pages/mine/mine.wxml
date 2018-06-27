@@ -1,0 +1,26 @@
+<!--pages/mine/mine.wxml-->
+<!-- 个人信息 -->
+<view class="summary">
+  <!-- <view class="avatar-container"> -->
+  <image src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '/imgs/default-avatar.png'}}" class="avatar" />
+  <!-- </view> -->
+  <view class="nickname">{{userInfo.nickName}}</view>
+</view>
+<view class="listview">
+  <!--自动刷新按钮  -->
+  <view class="item">
+    <image class="hd" src="../../imgs/refresh.png" />
+    <view class="bd">自动刷新</view>
+    <view class="body-view">
+      <switch checked bindchange="switchChange" />
+    </view>
+  </view>
+  <!--时间间隔横条 -->
+  <view class="item">
+    <image class="hd" src="{{refresh?'../../imgs/interval-selected.png':'../../imgs/interval.png'}}" />
+    <view class="bd" style="{{refresh?' ':'color:gray '}}">时间间隔</view>
+    <view class="body-view2">
+      <slider disabled='{{!refresh}}' bindchange="sliderChange" step='10' min="10" max="60" value="30" show-value/>
+    </view>
+  </view>
+</view>

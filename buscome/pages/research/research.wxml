@@ -1,0 +1,46 @@
+<!--pages/research/research.wxml-->
+<view class="zhenggeyemian">
+  <view class='ttop'>
+    <view class="topsearch">
+      <view class="topsearchtitle">
+        <view class="leftspan">
+          {{locationInfo.city}}
+        </view>
+        <image src="../../imgs/search.png">
+        </image>
+        <view bindtap="jumpSearch" style='color:grey;font-size:13px;'>
+          请输入搜索线路
+        </view>
+      </view>
+    </view>
+    <view class="danghang">
+      <view class="danghang2" data-type="1" style='{{type=="1"?"border-bottom: 2px solid red":""}}' bindtap='changeType'>周边站点</view>
+      <view class="danghang3" data-type="2" style='{{type=="2"?"border-bottom: 2px solid red":""}}' bindtap='changeType'>地图</view>
+    </view>
+  </view>
+  <view class='middles'>
+    <view class="middle" wx:if="{{type=='1'}}" wx:for="{{stationList}}" wx:key="" wx:for-index="idx1" wx:for-item="station">
+      <view class='middlesingle'>
+        <view class='middlesingletop' bindtap='jumpLinesShow' data-station="{{station.station}}">
+          <view class='middlesingletopleft'>{{station.station}}</view>
+          <view class='middlesingletopright'>
+            <view class='mi'>米</view>
+            <view class='middlesingletoprightredfont'>
+              {{station.distance}}
+            </view>
+            <view class='mi'> 距离你</view>
+            <view class="imagess">
+              <image src="../../imgs/distance.png"></image>
+            </view>
+          </view>
+        </view>
+        <view class='middlesinglebottom' wx:for="{{station.lines}}" wx:key="" wx:for-index="idx2" wx:for-item="line" bindtap='jumpLineDetail' data-line='{{line}}' data-station="{{station.station}}">
+          <view class='ditiemz'>{{line}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="map" wx:if="{{type=='2'}}">
+      <map id="map" longitude="{{locationInfo.longitude}}" latitude="{{locationInfo.latitude}}" scale="16" markers='{{markers}}' bindcallouttap='callouttap' show-location style="width: 100%;height:430px;"></map>
+    </view>
+  </view>
+</view>

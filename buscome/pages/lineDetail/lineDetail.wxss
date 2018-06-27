@@ -1,0 +1,193 @@
+/* pages/lineDetail/lineDetail.wxss */
+
+.all {
+  float: left;
+  width: 100%;
+  height: 100%;
+   background-color: #eee;
+}
+
+.top {
+  position: fixed;
+  float: left;
+  width: 100%;
+  height: 50px;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+.topleft {
+  float: left;
+  width: 98%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.toplefttop {
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+
+.toplefttopleft {
+  float: left;
+  height: 100%;
+  padding-top: 2%;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.toplefttopmiddle {
+  float: left;
+  height: 100%;
+  padding-top: 3%;
+  line-height: 100%;
+  font-size: 11px;
+}
+
+.toplefttopmiddle image {
+  float: left;
+  width: 50px;
+  height: 20px;
+}
+
+.toplefttopright {
+  float: left;
+  height: 100%;
+  padding-top: 2%;
+  font-size: 13px;
+}
+
+.topleftbottom {
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+
+.topleftbottomredspan {
+  float: left;
+  width: 10%;
+  height: 70%;
+  text-align: center;
+  margin: 5px 0px 5px 0px;
+  font-size: 12px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.topleftbottomtimespan {
+  float: left;
+  width: 10%;
+  height: 90%;
+  text-align: center;
+  margin: 5px 10px 5px 10px;
+  font-size: 12px;
+}
+.toprighttop {
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  width: 25%;
+   padding-top: 5px;
+  color: red;
+  background-color: white;
+}
+
+.toprightbom {
+  float: left;
+  font-size: 12px;
+  text-align: center;
+  width: 20%;
+ padding-top: 5px;
+  color: black;
+  background-color: white;
+}
+
+.toprightbom2 {
+  float: right;
+  position: relative;
+  color: red;
+  font-size: 14px;
+}
+
+.middles {
+  margin: 40px;
+  float: left;
+  width: 88%;
+  height: 100%;
+  padding-top: 75px;
+  background-color: #eee;
+}
+
+.middles1 {
+  float: left;
+  width: 100%;
+  height: 80px;
+}
+
+.middles11 {
+  float: left;
+  width: 100%;
+  height: 33%;
+}
+
+.middles111 {
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: right;
+}
+
+.middles1111 {
+  font-size: 13px;
+  float: right;
+  border-radius: 20px;
+  height: 25px;
+  line-height: 25px;
+  width: 30%;
+  text-align: center;
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+}
+
+.middles112 {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.middles113 {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.middles113 image {
+}
+
+.middles12 {
+  float: left;
+  height: 68%;
+  width: 19.5%;
+}
+
+.middles13 {
+  float: left;
+  height: 68%;
+  width: 1%;
+  background-color: grey;
+  border-right: 1px dashed white;
+}
+
+.middles14 {
+  float: left;
+  height: 68%;
+  width: 1%;
+  background-color: grey;
+}

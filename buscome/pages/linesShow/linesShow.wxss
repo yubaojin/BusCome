@@ -1,0 +1,167 @@
+/* pages/linesShow/linesShow.wxss */
+page{
+    background-color: #eee;
+}
+.all {
+  float: left;
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+}
+
+.lispan {
+  float: left;
+  background-color: white;
+  width: 100%;
+  height: 58px;
+  border-top: 1px solid #eee;
+  margin-top: 5px;
+}
+
+.q1 {
+  float: left;
+  height: 58px;
+  line-height: 58px;
+  width: 30%;
+  padding-left: 5px;
+}
+
+.q11 {
+  float: left;
+  height: 58px;
+  line-height: 658px;
+  padding-top: 5px;
+  width: 30%;
+}
+
+.q11 image {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: 35px;
+  padding-left: 8px;
+  margin: 5px 10px 5px 0px;
+}
+
+.q12 {
+  float: left;
+  height: 58px;
+  line-height: 58px;
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+.q2 {
+  float: left;
+  height: 58px;
+  width: 64%;
+  padding: 5px 5px 0px 5px;
+}
+
+.q21 {
+  float: left;
+  width: 100%;
+  height: 50%;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.q211 {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.q212 {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding-top: 5px;
+}
+
+.q212 image {
+  float: left;
+  height: 20px;
+  line-height: 30px;
+  width: 30px;
+}
+
+.q213 {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.q22 {
+  float: left;
+  font-size: 12px;
+  width: 100%;
+  height: 44%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.q221 {
+  float: left;
+  font-size: 12px;
+  width: 60%;
+  height: 100%;
+  padding-left: 5px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.q2211 {
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.q2212 {
+  padding-top: 0px;
+  margin-top: 0px;
+  float: left;
+  font-size: 12px;
+  padding-left: 5px;
+  height: 100%;
+}
+
+.q222 {
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  width: 35%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.q222 {
+  padding-top: 0px;
+  margin-top: 0px;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+}
+
+.q2221 {
+  padding-top: 0px;
+  margin-top: 0px;
+  float: right;
+  font-size: 12px;
+  height: 100%;
+}
+
+.q2222 {
+  padding-top: 0px;
+  margin-top: 0px;
+  float: right;
+  font-size: 12px;
+  height: 100%;
+}

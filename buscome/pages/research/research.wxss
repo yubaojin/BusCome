@@ -1,0 +1,174 @@
+/* pages/research/research.wxss */
+
+.uszhenggeyemianerinfo {
+  float: left;
+  width: 100%;
+}
+.zhenggeyemian{
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+.topsearch {
+  width: 100%;
+  float: left;
+  height: 40px;
+  padding-top: 6px;
+  background-color: white;
+}
+
+.topsearchtitle {
+  width: 90%;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  padding: 8px 10px 5px 10px;
+  background-color: #eee;
+  border-radius: 30px;
+}
+
+.leftspan {
+  float: left;
+  width: 13%;
+  height: 100%;
+  background-color: #eee;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
+
+.topsearchtitle image {
+  float: left;
+  width: 8%;
+  height: 100%;
+  background-color: #eee;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
+
+.topsearchtitle input {
+  float: left;
+  width: 76%;
+  height: 100%;
+  background-color: #eee;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
+.ttop{
+ position: fixed;
+ float: left;
+  width: 100%;
+ z-index:1；
+}
+
+.danghang {
+  float: left;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+.danghang2 {
+  float: left;
+  width: 50%;
+  height: 39px;
+  line-height: 39px;
+  background-color: white;
+  text-align: center;
+
+  font-size: 12px;
+}
+
+.danghang3 {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  font-size: 12px;
+}
+.middles{
+  float: left;
+  width: 100%;
+    margin-top:88px;
+}
+.middle {
+  float: left;
+  width: 100%;
+  }
+
+.middlesingle {
+  margin-top: 10px;
+  float: left;
+  width: 99%;
+  border: 1px solid #eee;
+}
+
+.middlesingletop {
+  float: left;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #eff;
+  font-size: 12px;
+}
+
+.middlesingletopleft {
+  float: left;
+  width: 45%;
+  height: 35px;
+  line-height: 35px;
+  background-color: #eff;
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+}
+
+.middlesingletopright {
+  float: left;
+  width: 45%;
+  text-align: right;
+  height: 35px;
+  line-height: 35px;
+  background-color: #eff;
+  font-size: 12px;
+}
+.imagess image{
+ height: 40%;
+  width: 40%;
+}
+.imagess{
+ float: right;
+  height: 35px;
+  width: 30%;
+  line-height:35px;
+}
+.middlesingletoprightredfont{
+    float: right;
+    color: red;
+    font-size: 14px;
+}
+.mi{
+  float: right;
+}
+
+
+.middlesinglebottom {
+  float: left;
+}
+
+.ditiemz {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  font-size: 12px;
+  border: 1px solid #eee;
+}
+
+.map{
+  position:fixed;
+  float: left;
+  width: 100%;
+  height: 430px;
+   z-index:1；
+}

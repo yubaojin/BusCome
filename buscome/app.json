@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/research/research",
+    "pages/transfer/transfer",
+    "pages/transferLineDetailMap/transferLineDetailMap",
+    "pages/transferLineDetail/transferLineDetail",
+    "pages/transferLines/transferLines",
+    "pages/mine/mine",
+    "pages/linesShow/linesShow",
+    "pages/lineDetail/lineDetail",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarTitleText": "公车来啦",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/research/research",
+        "text": "查询",
+        "iconPath": "./imgs/icons/bus.png",
+        "selectedIconPath": "./imgs/icons/bus-selected.png"
+      },
+      {
+        "pagePath": "pages/transfer/transfer",
+        "text": "换乘",
+        "iconPath": "./imgs/icons/ts.png",
+        "selectedIconPath": "./imgs/icons/ts-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "./imgs/icons/mine.png",
+        "selectedIconPath": "./imgs/icons/mine-selected.png"
+      }
+    ],
+    "selectedColor": "#0099ff",
+    "borderStyle": "black"
+  }
+}

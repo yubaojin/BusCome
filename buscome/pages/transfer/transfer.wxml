@@ -1,0 +1,26 @@
+<!--pages/transfer/transfer.wxml-->
+<view class='top'>
+  <view class='topleft'>
+    <image src="../../imgs/person.png" />
+  </view>
+  <view class='topright'>
+    <view class='toprighttop'>
+      <view class='toprighttop1'>
+        <image src="../../imgs/start.png" />
+      </view>
+      <view class='toprighttop2'>
+        <input disabled='true' placeholder='我的位置' value="{{start.title}}"></input>
+      </view>
+      <view class='toprighttop3' data-type='start' bindtap='chooseLocation'>选点</view>
+    </view>
+    <view class='toprightbottom'>
+      <view class='toprighttop1'>
+        <image src="../../imgs/end.png" />
+      </view>
+      <view class='toprighttop2'>
+        <input disabled='true' placeholder='目的地' value="{{end.title}}"></input>
+      </view>
+      <view class='toprighttop3' data-type='end' bindtap='chooseLocation'>选点</view>
+    </view>
+  </view>
+</view>

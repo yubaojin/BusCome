@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class='all'>
+  <view class='top'>
+    <view class='topsearch'>
+      <input type='text' placeholder='请搜索线路' bindinput="setLine" focus='true'></input>
+    </view>
+    <view class='searchbtn'>
+      <image src="../../imgs/search-selected.png" bindtap='search'></image>
+    </view>
+  </view>
+  <view class='mdle'>
+    <view class='middle' wx:for="{{lines}}" wx:key="" wx:for-index="idx1" wx:for-item="line">
+      <view bindtap='jumpLineDetail' data-line='{{line.transitno}}'>
+        <view class='middletop'>{{line.transitno}}</view>
+        <view class='middlebottom'>
+          <view class='middlebottom1'>{{line.startstation}}</view>
+          <view class='middlebottom2'>
+            <image src="../../imgs/doublearrow.png"></image>
+          </view>
+          <view class='middlebottom1'>{{line.endstation}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
